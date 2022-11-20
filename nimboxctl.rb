@@ -5,11 +5,11 @@
 class Nimboxctl < Formula
   desc ""
   homepage "https://github.com/nimbox/nimboxctl"
-  version "0.0.9"
+  version "0.0.10"
 
   on_macos do
-    url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.9/nimboxctl_0.0.9_darwin_all.tar.gz"
-    sha256 "124e0d6992fe3a49e97fffeb8ec1df3aa02fa53af6672c1ad0342fb4e39aa5dd"
+    url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.10/nimboxctl_0.0.10_darwin_all.tar.gz"
+    sha256 "7b8495b6ff3635dfbab321bee41230b71d38bb23002034f552b4a6db899084a4"
 
     def install
       bin.install "nimboxctl"
@@ -18,16 +18,16 @@ class Nimboxctl < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.9/nimboxctl_0.0.9_linux_arm64.tar.gz"
-      sha256 "40719447da0792eebda7aee5f6bb7bead44797557a332727a05f83574c36c2bd"
+      url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.10/nimboxctl_0.0.10_linux_arm64.tar.gz"
+      sha256 "efd2e68b1588a1196a7565ea978ea1da78c71b1f5f02fbdf5f26d430be0ae233"
 
       def install
         bin.install "nimboxctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.9/nimboxctl_0.0.9_linux_amd64.tar.gz"
-      sha256 "8027a76826c4450d9fb90af561414469d8ffe5188e2ef43617078768862621e2"
+      url "https://github.com/nimbox/nimboxctl/releases/download/v0.0.10/nimboxctl_0.0.10_linux_amd64.tar.gz"
+      sha256 "5843ce6b6621a94d0d0efd55626d4ca9bd5512c9870b60a12321738fecb1acb0"
 
       def install
         bin.install "nimboxctl"
