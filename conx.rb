@@ -5,11 +5,11 @@
 class Conx < Formula
   desc ""
   homepage "https://github.com/nimbox/canexer-connector"
-  version "2.0.5"
+  version "2.0.6"
 
   on_macos do
-    url "https://github.com/nimbox/conx/releases/download/v2.0.5/conx_2.0.5_darwin_all.tar.gz"
-    sha256 "99a8304fceb87b3199151b18a23a94eb18ef356f54c948cf5d4d565c47e1a114"
+    url "https://github.com/nimbox/conx/releases/download/v2.0.6/conx_2.0.6_darwin_all.tar.gz"
+    sha256 "e72025e461571d1b7a0afcebe9ccad96edcede15f4971c2d06dc1500e8f12ab3"
 
     def install
       bin.install "conx"
@@ -18,16 +18,16 @@ class Conx < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nimbox/conx/releases/download/v2.0.5/conx_2.0.5_linux_arm64.tar.gz"
-      sha256 "179c145feb98e86e07689c6ffbba00e286557199050406804805dd2149d38617"
+      url "https://github.com/nimbox/conx/releases/download/v2.0.6/conx_2.0.6_linux_arm64.tar.gz"
+      sha256 "4376ab050bfc081098be0246dbc6a2dc108b594b1a6b68d0589814ace4dd1fd1"
 
       def install
         bin.install "conx"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/nimbox/conx/releases/download/v2.0.5/conx_2.0.5_linux_amd64.tar.gz"
-      sha256 "7e5e57307ee6f432461c45c055f00ad90b2e81411349798f065e69a5cbd4c1ed"
+      url "https://github.com/nimbox/conx/releases/download/v2.0.6/conx_2.0.6_linux_amd64.tar.gz"
+      sha256 "3c8ff5a14eb46e3661dba549a78a30401dfa4471b2e2f6d9429914b391b6c840"
 
       def install
         bin.install "conx"
